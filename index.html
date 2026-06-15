@@ -2,311 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>S Asfiya Anjum | Portfolio</title>
-  <style>
-    /* Reset */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-
-    a {
-      color: #4a90e2;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    a:hover {
-      color: #2c6abf;
-    }
-
-    header {
-      background-color: #2c3e50;
-      color: #ecf0f1;
-      padding: 60px 20px 80px;
-      text-align: center;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: #bdc3c7;
-    }
-
-    /* Navigation */
-    nav {
-      background: #34495e;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    nav a {
-      font-weight: 600;
-      font-size: 1rem;
-      text-transform: uppercase;
-      padding: 5px 10px;
-      border-radius: 4px;
-    }
-
-    nav a:hover,
-    nav a.active {
-      background-color: #4a90e2;
-      color: #fff;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px 60px;
-    }
-
-    section {
-      margin-bottom: 60px;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      border-bottom: 3px solid #4a90e2;
-      padding-bottom: 5px;
-      width: fit-content;
-      color: #34495e;
-    }
-
-    p, ul {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-top: 15px;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    /* Projects grid */
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 25px;
-    }
-
-    @media(min-width: 600px) {
-      .projects {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    .project {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.07);
-      padding: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-    }
-
-    .project h3 {
-      margin-bottom: 15px;
-      color: #2c3e50;
-    }
-
-    /* Personal details styling */
-    .personal-details ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px 40px;
-    }
-
-    @media (max-width: 480px) {
-      .personal-details ul {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Footer */
-    footer {
-      background: #2c3e50;
-      text-align: center;
-      color: #ecf0f1;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-    }
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="S Asfiya Anjum - Data Analyst & Python Developer Portfolio. Specializing in ETL pipelines, ML, and Cloud Solutions."/>
+  <meta name="keywords" content="S Asfiya Anjum, Data Analyst, Python Developer, Data Engineer, ETL, SQL, AWS, Portfolio"/>
+  <meta name="author" content="S Asfiya Anjum"/>
+  <title>S Asfiya Anjum | Data Analyst & Python Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header>
-    <h1>S Asfiya Anjum</h1>
-    <p>Data Scientist Enthusiast | SIH'24 Finalist</p>
-  </header>
-
   <nav>
-    <a href="#about" class="active">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#qualifications">Qualifications</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#projects">Projects</a>
-    <a href="#tools">Tools</a>
-    <a href="#personal">Personal</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">AA<span>.dev</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle" aria-label="Toggle Theme">🌓</button></li>
+    </ul>
   </nav>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm a Data Science student with a passion for transforming data into actionable insights. I specialize in SQL, Power BI, Tableau, Python, and HTML, with a keen interest in machine learning and data visualization.</p>
-    </section>
+  <header id="home">
+    <div class="hero-container scroll-fade">
+      <div class="badge">Available for Roles</div>
+      <h1>Hi, I'm <span class="gradient-text">S Asfiya Anjum</span></h1>
+      <p class="title">Data Analyst & Python Developer</p>
+      <p class="tagline">Building robust data pipelines, predictive models, and cloud-backed analytical solutions.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+      </div>
+    </div>
+  </header>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Core Java (OOP, Exception Handling, Collections)</li>
-        <li>HTML, SQL</li>
-        <li>Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Librosa, TensorFlow)</li>
-        <li>Tableau & Power BI</li>
-        <li>Git & GitHub</li>
-        <li>AWS Cloud</li>
-        <li>Problem Solving & Debugging</li>
-      </ul>
-    </section>
-
-    <section id="qualifications">
-      <h2>Qualifications</h2>
-      <ul>
-        <li>Bachelor of Technology in Computer Science (Data Science) – MTIEAT, Palamaner</li>
-        <li>Intermediate (MPC) – MTJC, Palamaner</li>
-      </ul>
-    </section>
-
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li> Data Analytics Certificate (Simplilearn)</li>
-        <li> GenAI Certificate(Simplilearn)</li>
-        <li>Python (Udemy)</li>
-        <li>Introduction to IOT(NPTEL)</li>
-      </ul>
-    </section>
-
-    <section id="achievements">
-      <h2>Achievements</h2>
-      <ul>
-        <li>SIH'24 Finalist – Smart India Hackathon 2024</li>
-        <li>Topper in NPTEL IOT'2025</li>
-        <li>Organized Data Science Workshops at MTIEAT</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Quiz Application (Core Java)</h3>
-          <ul>
-            <li>Developed a console-based quiz system using Core Java.</li>
-            <li>Used constructors and methods for modular, reusable code.</li>
-            <li>Applied OOP concepts: inheritance, encapsulation, abstraction.</li>
-            <li>Designed dynamic question logic and handled user input.</li>
-            <li>Implemented score tracking and result display.</li>
-            <li>Built entirely with Java fundamentals – no external libraries.</li>
+  <section id="skills" class="section scroll-fade">
+    <div class="container">
+      <h2 class="section-title">Technical Expertise</h2>
+      <p class="section-subtitle">A balanced toolkit designed to optimize data workflows, uncover insights, and write production-grade code.</p>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Core & Backend</h3>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>Core Java</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
           </ul>
         </div>
-        <!-- Add more projects here -->
+        <div class="skill-category">
+          <h3>Data & Cloud Engineering</h3>
+          <ul class="skills-list">
+            <li>ETL Pipelines</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>AWS (EC2, Lambda, S3)</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>BI & Visualizations</h3>
+          <ul class="skills-list">
+            <li>Power BI</li>
+            <li>Tableau</li>
+            <li>Matplotlib</li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="tools">
-      <h2>Tools</h2>
-      <ul>
-        <li>Jupyter Notebook</li>
-        <li>VS Code</li>
-        <li>Git & GitHub</li>
-        <li>Tableau Desktop</li>
-        <li>Power BI Desktop</li>
-        <li>AWS Management Console</li>
-      </ul>
-    </section>
+  <section id="projects" class="section scroll-fade">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        
+        <div class="project-card">
+          <div class="project-tags"><span>Python</span><span>SQL</span><span>ETL</span></div>
+          <h3>Sales Data Pipeline</h3>
+          <p>Built an end-to-end automated ETL pipeline designed to ingest, clean, transform, and load global sales data into a relational database. Applied data quality checks, feature engineering, and advanced SQL analytics to derive profitability metrics and sales performance insights, driving visual dashboards for strategic decision-making.</p>
+          <div class="project-links">
+            <a href="https://github.com/ASFIYA11" target="_blank" class="proj-link">View Repository ↗</a>
+          </div>
+        </div>
 
-    <section id="personal" class="personal-details">
-      <h2>Personal Details</h2>
-      <ul>
-        <li><strong>Name:</strong> S Asfiya Anjum</li>
-        <li><strong>Date of Birth:</strong> 05/12/2004</li>
-        <li><strong>Email:</strong> 22HR1A3247@mtieat.org</li>
-        <li><strong>Phone:</strong> +91-9392262133</li>
-        <li><strong>Location:</strong> Palamaner, Andhra Pradesh, India</li>
-        <li><strong>Languages Known:</strong> English, Telugu, Hindi</li>
-      </ul>
-    </section>
+        <div class="project-card">
+          <div class="project-tags"><span>Machine Learning</span><span>Streamlit</span><span>Python</span></div>
+          <h3>Heart Disease Prediction App</h3>
+          <p>Developed and deployed a web-based predictive application utilizing a Random Forest Classifier trained on preprocessed UCI healthcare datasets. Engineered with pandas, scikit-learn, and NumPy to clean high-variance clinical data, resulting in highly precise classifications delivered in real-time through an accessible Streamlit user interface.</p>
+          <div class="project-links">
+            <a href="https://github.com/ASFIYA11" target="_blank" class="proj-link">Live Demo ↗</a>
+          </div>
+        </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out to me at <strong>22HR1A3247@mtieat.org</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section scroll-fade">
+    <div class="container">
+      <h2 class="section-title">Experience & Background</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">May - June 2025</div>
+          <div class="timeline-content">
+            <h3>AI Intern</h3>
+            <h4>SkillDzire</h4>
+            <p>Assisted in designing, testing, and preprocessing machine learning models using Scikit-Learn and TensorFlow. Created comprehensive analytical workflows to evaluate AI algorithm performance, converting complex raw datasets into digestible visual briefs for mentorship review.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Graduated 2026</div>
+          <div class="timeline-content">
+            <h3>B.Tech in Computer Science (Data Science)</h3>
+            <h4>Mother Theresa Institute Of Engineering And Technology, JNTUA</h4>
+            <p>Graduated with a CGPA of 8.5. Developed a strong technical core combining data infrastructure, algorithms, and cloud deployments with targeted machine learning execution. Certified AWS Data Engineer intern and GATE 2025 qualifier.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section scroll-fade">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>I am actively seeking professional opportunities where I can apply my analytical frameworks and backend Python skills to real-world infrastructure problems. Let's build together.</p>
       
-    </section>
-  </main>
+      <div class="contact-details">
+        <a href="mailto:asfiya039@gmail.com" class="contact-card">
+          <span>Email</span>
+          <strong>asfiya039@gmail.com</strong>
+        </a>
+        <a href="tel:9392262133" class="contact-card">
+          <span>Phone</span>
+          <strong>+91 9392262133</strong>
+        </a>
+        <a href="https://github.com/ASFIYA11" target="_blank" class="contact-card">
+          <span>GitHub</span>
+          <strong>github.com/ASFIYA11</strong>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 S Asfiya Anjum. All rights reserved.
+    <p>&copy; 2026 S Asfiya Anjum. </p>
   </footer>
 
-  <script>
-    // Highlight nav links on scroll (optional enhancement)
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 80;
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
