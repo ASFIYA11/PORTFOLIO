@@ -1,4 +1,8 @@
 📊 Modern Analytics & Engineering Portfolio
+
+https://portfoliowebsite3247.netlify.app/
+
+
 A minimalist, high-performance portfolio website showcasing production-ready data pipelines, predictive machine learning models, and cloud-backed analytical solutions. Built with clean, semantic HTML5, modern responsive CSS (featuring CSS variables and Glassmorphism design principles), and optimized vanilla JavaScript.
 
 🎯 Target Roles: Data Analyst | Python Developer | Data Engineer
