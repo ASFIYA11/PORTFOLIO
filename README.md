@@ -2,7 +2,7 @@
 
 A single-page, dark-mode portfolio website for **S Asfiya Anjum**, Data Analyst — built with plain HTML5, CSS3, and vanilla JavaScript. No frameworks, no build step, no dependencies to install.
 
-🔗 **Live site:** _add your deployed link here once hosted_
+🔗 **Live site:** https://asfiyasportfolio.netlify.app/
 
 ---
 
