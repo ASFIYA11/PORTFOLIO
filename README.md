@@ -1,76 +1,61 @@
-📊 Modern Analytics & Engineering Portfolio
+#  Portfolio
 
-https://portfoliowebsite3247.netlify.app/
+A single-page, dark-mode portfolio website for **S Asfiya Anjum**, Data Analyst — built with plain HTML5, CSS3, and vanilla JavaScript. No frameworks, no build step, no dependencies to install.
+
+🔗 **Live site:** _add your deployed link here once hosted_
+
+---
+
+## Overview
+
+This is a self-contained `index.html` file — everything (styles, scripts, and even the downloadable resume) is embedded in one document. Clone it, open it, or deploy it as-is on any static host.
+
+### Sections
+- **Hero** — headline, quick stats, animated SQL/chart visual
+- **About** — profile summary and core areas of expertise
+- **Experience** — internship timeline with achievements
+- **Projects** — Heart Disease Predictor, Sales Data Pipeline, EduSphere (each linked to its GitHub repo)
+- **Skills Matrix** — categorized technical skills
+- **Education** — degree and CGPA
+- **Contact** — direct email / phone / LinkedIn / GitHub cards (no form, no backend required)
+
+## Features
+
+- 🌑 Dark theme with layered surfaces and colored accents (blue, teal, amber, violet)
+- 📱 Fully responsive (mobile, tablet, desktop) with an animated hamburger menu
+- ✨ Scroll-triggered reveal animations via `IntersectionObserver`
+- 📄 One-click resume download — the PDF is embedded as a base64 data URI, so it works even without a separate file on the server
+- ♿ Accessible: visible focus states, `prefers-reduced-motion` respected, semantic HTML
+- ⚡ Zero dependencies beyond Google Fonts (Inter + JetBrains Mono)
+
+## Tech Stack
+
+- HTML5 (semantic markup)
+- CSS3 (custom properties, Grid, Flexbox, no preprocessor)
+- Vanilla JavaScript (no frameworks/libraries)
+
+## Getting Started
+
+### Run locally
+```bash
+git clone https://github.com/ASFIYA11/<your-repo-name>.git
+cd <your-repo-name>
+open index.html   # or just double-click the file
+```
+No install step needed — it's a static file.
 
 
-A minimalist, high-performance portfolio website showcasing production-ready data pipelines, predictive machine learning models, and cloud-backed analytical solutions. Built with clean, semantic HTML5, modern responsive CSS (featuring CSS variables and Glassmorphism design principles), and optimized vanilla JavaScript.
+## Project Structure
+```
+.
+├── index.html   # entire site: markup, styles, script, and embedded resume
+└── README.md
+```
 
-🎯 Target Roles: Data Analyst | Python Developer | Data Engineer
+## Updating Content
 
-🛠️ Tech Stack & Core Competencies
-Programming Languages: Python, Core Java, HTML5, CSS3
+All content lives in `index.html`:
+- **Resume file**: replace the base64 string in the two `Download Resume` buttons if you update your resume (search for `data:application/pdf;base64,`).
+- **Projects**: edit the `<div class="proj-card">` blocks in the Projects section — update the repo links to point at your latest work.
+- **Contact info**: update the `mailto:`, `tel:`, LinkedIn, and GitHub links in the Contact section's `.ccard` blocks.
 
-Data Engineering & Cloud: Automated ETL Pipelines, AWS (S3, Lambda, EC2), Git/GitHub
-
-Databases: MySQL, MongoDB
-
-Data Science & ML: Scikit-Learn, TensorFlow, Pandas, NumPy, Random Forest Classification
-
-Business Intelligence: Power BI, Tableau, Matplotlib
-
-🚀 Featured Projects
-1. Sales Data Pipeline (ETL)
-Objective: Ingest, clean, transform, and analyze global sales records to drive key executive profitability metrics.
-
-Highlights:
-
-Designed an end-to-end automated ETL pipeline converting raw transactional data into a clean relational schema.
-
-Implemented programmatic data quality checks and automated feature engineering workflows.
-
-Engineered optimized SQL queries to extract granular sales performance trends.
-
-Built visualizations with Matplotlib to expose hidden profit margins.
-
-2. Heart Disease Prediction App
-Objective: Deliver real-time health diagnostic predictions using historical patient clinical data.
-
-Highlights:
-
-Preprocessed and cleaned the UCI Heart Disease dataset with Pandas & NumPy.
-
-Trained and cross-validated a robust RandomForestClassifier using Scikit-Learn.
-
-Deployed the model into a lightweight Streamlit app for instant predictions.
-
-💼 Industry Experience
-AI Intern | SkillDzire (May — June 2025)
-
-Collaborated on designing and auditing predictive ML models using Scikit-Learn & TensorFlow.
-
-Configured preprocessing pipelines ensuring clean data ingestion for training iterations.
-
-Generated performance evaluation matrices and visualizations for team reviews.
-
-🎓 Education & Credentials
-B.Tech in Computer Science (Specialization in Data Science)  
-Mother Theresa Institute of Engineering and Technology, JNTUA (2022 - 2026)
-
-CGPA: 8.5 / 10
-
-Achievements: GATE 2025 Qualified | Smart India Hackathon '24 Participant
-
-Certifications:
-
-AWS Data Engineering Internship
-
-Udemy Python Pro Bootcamp
-
-NPTEL Internet of Things (IoT)
-
-📂 Repository Structure
-text
-├── index.html       # Clean, semantic structure with optimized meta SEO tags
-├── style.css        # Responsive layout, glassmorphism UI variables, and dark mode mechanics
-├── script.js        # Asynchronous Intersection Observers for modular fade animations
-└── README.md        # Technical project documentation
